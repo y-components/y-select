@@ -1,0 +1,29 @@
+.y-select {
+  display: inline-block;
+}
+.y-select_theme_normal {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.y-select_theme_normal .y-select__text{
+  vertical-align: middle;
+}
+.y-select_theme_normal .y-select__text::after {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  background: url("arrow.svg") no-repeat center;
+  transition: transform 0.1s ease-out;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.y-select_theme_normal.y-select_size_s .y-select__text::after {
+  width: 9px;
+  height: 5px;
+  background: url("arrow-s.svg") no-repeat center;
+  margin-left: 6px;
+}
+.y-select_theme_normal.y-select_opened .y-select__text::after {
+  transform: rotate(-180deg);
+}
