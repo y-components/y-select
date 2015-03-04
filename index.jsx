@@ -6,12 +6,43 @@ var Button = require('y-button');
 var Style = require('./index.css!');
 
 var YSelect = {
-	open: function (e) {
+	toggle: function (e) {
 		this.setState({ opened: !this.state.opened });
 	},
 
 	getInitialState: function () {
-		return { opened: this.props.opened };
+		return {
+			selected: this.props.selected || 0,
+			opened: this.props.opened
+		};
+	},
+
+	setSelected: function (index, e) {
+		this.setState({ selected: index });
+		e.preventDefault();
+	},
+
+	getOptions: function () {
+		var self = this;
+
+		var selectOptions = this.props.children.map(function (option, index) {
+			var classes = b('option', {
+				theme: self.props.theme || 'normal',
+				selected: self.state.selected === index
+			});
+
+			return (
+				<div key={index} className={classes} onClick={self.setSelected.bind(self, index)}>
+					{option.props.value}
+				</div>
+			);
+		});
+
+		return (
+			<div className={b('popup')}>
+				{selectOptions}
+			</div>
+		);
 	},
 
 	render: function () {
@@ -22,12 +53,13 @@ var YSelect = {
 		});
 
 		return (
-			<div className={selectClasses} onClick={this.open}>
+			<div className={selectClasses} onClick={this.toggle}>
 				<Button size={this.props.size}>
 					<span className={b('text')}>
-						{this.props.value}
+						{this.props.children[this.state.selected].props.value}
 					</span>
 				</Button>
+				{this.getOptions()}
 			</div>
 		);
 	}

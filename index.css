@@ -27,3 +27,36 @@
 .y-select_theme_normal.y-select_opened .y-select__text::after {
   transform: rotate(-180deg);
 }
+.y-select .y-select__popup {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 32700;
+    display: none;
+    box-shadow: 0 10px 20px -4px rgba(0,0,0,.4);
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 10px 6px;
+    margin-top: 10px;
+}
+.y-select.y-select_opened .y-select__popup {
+    display: block;
+}
+.y-select .y-select__option {
+    cursor: pointer;
+    padding: 0 20px 0 34px;
+    font-size: 15px;
+    line-height: 28px;
+}
+.y-select .y-select__option:not(.y-select__option_selected):hover::before {
+    position: absolute;
+    margin-left: -20px;
+    width: 1em;
+    content: '✓';
+    color: #eaeaea;
+}
+.y-select .y-select__option.y-select__option_selected::before {
+    position: absolute;
+    margin-left: -20px;
+    width: 1em;
+    content: '✓';
+}
