@@ -1,4 +1,4 @@
-# y-tabs
+# y-select
 
 :warning: __Under development__
 
