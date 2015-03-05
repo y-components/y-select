@@ -5,7 +5,7 @@ var React = require('react');
 var YSelect = require('./index.jsx!');
 
 React.render((
-    <div>
+    <div style={{padding: '10px'}}>
         <YSelect value="Select">
             <YSelect.Option value="First"/>
             <YSelect.Option value="Second"/>
