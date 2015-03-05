@@ -19,6 +19,12 @@
   "bugs": {
     "url": "https://github.com/y-components/y-select/issues"
   },
+  "files": [
+    "arrow-s.svg",
+    "arrow.svg",
+    "index.css",
+    "index.jsx"
+  ],
   "homepage": "https://github.com/y-components/y-select",
   "jspm": {
     "registry": "jspm",
