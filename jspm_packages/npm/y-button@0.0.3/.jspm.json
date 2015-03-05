@@ -1,0 +1,80 @@
+{
+  "name": "y-button",
+  "version": "0.0.3",
+  "description": "y-component button",
+  "scripts": {
+    "serve": "http-server -p 8080 -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y-components/y-button.git"
+  },
+  "keywords": [
+    "react",
+    "jspm",
+    "y-component"
+  ],
+  "author": {
+    "name": "Vsevolod Strukchinsky",
+    "email": "floatdrop@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-components/y-button/issues"
+  },
+  "homepage": "https://github.com/y-components/y-button",
+  "jspm": {
+    "registry": "jspm",
+    "main": "index.jsx!",
+    "directories": {
+      "lib": ".",
+      "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "b_": "npm:b_@^1.3.0",
+      "css": "github:systemjs/plugin-css@^0.1.6",
+      "jsx": "github:floatdrop/plugin-jsx@^0.1.1",
+      "react": "npm:react@^0.12.2",
+      "process": "github:jspm/nodelibs-process@^0.1.0"
+    }
+  },
+  "devDependencies": {
+    "http-server": "^0.7.5"
+  },
+  "gitHead": "d3848ac244086960df939740ebdba66d85798738",
+  "_id": "y-button@0.0.3",
+  "_shasum": "c56fb1ce82f3194d6d7e029d8a529352f7f76440",
+  "_from": ".",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "floatdrop",
+    "email": "floatdrop@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "floatdrop",
+      "email": "floatdrop@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "c56fb1ce82f3194d6d7e029d8a529352f7f76440",
+    "tarball": "http://public.npm.yandex-team.ru:5984/y-button/-/y-button-0.0.3.tgz"
+  },
+  "directories": {
+    "lib": ".",
+    "packages": "jspm_packages"
+  },
+  "registry": "jspm",
+  "main": "index.jsx!",
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "b_": "npm:b_@^1.3.0",
+    "css": "github:systemjs/plugin-css@^0.1.6",
+    "jsx": "github:floatdrop/plugin-jsx@^0.1.1",
+    "react": "npm:react@^0.12.2",
+    "process": "github:jspm/nodelibs-process@^0.1.0"
+  }
+}
