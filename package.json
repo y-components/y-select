@@ -40,8 +40,5 @@
       "react": "npm:react@^0.12.2",
       "y-button": "npm:y-button@^0.0.3"
     }
-  },
-  "devDependencies": {
-    "http-server": "^0.7.5"
   }
 }

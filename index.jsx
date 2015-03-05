@@ -6,6 +6,8 @@ var Button = require('y-button');
 var Style = require('./index.css!');
 
 var YSelect = {
+	displayName: 'y-select',
+
 	toggle: function (e) {
 		this.setState({ opened: !this.state.opened });
 	},
